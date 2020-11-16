@@ -1,0 +1,290 @@
+.page-dashboard {
+    #page-content-wrapper {
+        background: #f5f5fb;
+        min-width: 100vw;
+    }
+
+    #sidebar-wrapper {
+        margin-top: 60px;
+        min-height: 100vh;
+        margin-left: -15rem;
+        transition: margin 0.25s ease-out;
+
+        .sidebar-heading {
+            padding: 0.875rem 1.25rem;
+            font-size: 1.2rem;
+        }
+
+        .list-group {
+            width: 15rem;
+        }
+    }
+
+    #wrapper {
+        &.toggled {
+            #sidebar-wrapper {
+                margin-left: 0;
+            }
+        }
+    }
+
+    
+    .bg-nofull {
+        background-color: #6A1D25;
+    }
+
+    .navbar-store {
+        margin-top: 0px;
+        background-color: #f5f5fb;
+        box-shadow: 0px 4px 5px #cacad1;
+
+        @include media-breakpoint-up(md) {
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+
+    .list-group-item {
+        border: 0;
+        font-size: 16px;
+        color: #c5c5c5;
+        
+        &.active {
+            background: linear-gradient(
+                270deg,
+                rgba(255, 113, 88, 0.32) 2%,
+                rgba(255, 255, 255, 0) 100%
+            );
+
+            border-right: 4px solid #6A1D25;
+            color: #0c0d36;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        #sidebar-wrapper {
+            margin-top: 0px;
+            margin-left: 0; 
+        }
+
+        #page-content-wrapper {
+            min-width: 0;
+            width: 100%;
+        }
+
+        #wrapper {
+            &.toggled {
+                #sidebar-wrapper {
+                    margin-left: -15rem;
+                }
+            }
+        }
+    }
+
+    .section-content {
+        margin-top: 100px;
+        
+        @include media-breakpoint-up(md) {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        h5 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #0c0d36;
+        }
+        
+        .dashboard-title {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 36px;
+            color: #0c0d36;
+        }
+        
+        .dashboard-subtitle {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: #9191a9;
+        }
+
+        
+        .jadwal-title {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+        color: #383E56;
+        }
+
+        .jadwal-subtitle {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #383E56;
+        }
+
+        .mentor-forum {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 15px;
+            color: #6A1D25;
+        }
+
+        .date-forum {
+            font-style: italic;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #979797;
+        }
+        .name-forum {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #383E56;
+        }
+
+        .jawab-forum {
+           font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #979797;
+            margin-top: 8px;
+            margin-bottom: 20px;
+        }
+
+        .subtext-artikel {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #C4C4C4;
+        }    
+        
+        .artikel-title {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 36px;
+            color: #383E56;
+        }
+
+        .artikel-writer {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 21px;
+          color: #383E56;
+        }
+
+        .desc-artikel {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #A0A4A8;
+        }
+
+        .artikel-subtitle {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #C4C4C4;
+        }
+
+        .title-profil {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #6A1D25;
+        }
+
+        .subtitle-profil  {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #0C0D36;
+        }
+
+        .btn-lanjut {
+            background: #6A1D25;
+            border-radius: 4px;
+            color: white;
+        }
+
+        .btn-kembali {
+            background: #F5F5FB;
+            border: 1px solid #6A1D25;
+            box-sizing: border-box;
+            border-radius: 4px;
+            color: #6A1D25;
+        }
+
+        .dashboard-kelas-subtitle {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #6A1D25;
+        }
+
+        .dashboard-kelas-description {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 27px;
+            letter-spacing: 0.01em;
+            color: #9191A9;
+        }
+
+        .title-menu-kelas {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            color: #383E56
+        }
+
+        .title-materi-kelas {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #9191A9;
+            text-decoration: none;
+        }
+
+        .btn-soal {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            text-decoration-line: underline;
+            color: #FF7158;
+        }
+
+        .nav-pills {
+            .nav-link {
+                font-weight: normal;
+                font-size: 18px;
+                color: #9191a9;
+                line-height: 27px;
+                border-radius: 0;
+                
+                &.active {
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #0c0d36;
+                    border-bottom: 2px solid #0c0d36;
+                    background: none;
+                }
+            }
+        }
+
+        .gallery-container {
+            .delete-gallery {
+                display: block;
+                position: absolute;
+                top: -10px;
+                right: 0;
+                
+            }
+        }
+    }
+}
