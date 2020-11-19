@@ -25,37 +25,43 @@
           </div>
           <div class="list-group list-group-flush">
             <a
-              href="/dashboard.html"
+              href="/admin.html"
               class="list-group-item list-group-item-action active"
             >
               Dashboard
             </a>
             <a
-              href="/dashboard-kelas.html"
+              href="/admin-siswa.html"
               class="list-group-item list-group-item-action"
             >
-              Kelas
+              Siswa
             </a>
             <a
-              href="/dashboard-forum.html"
+              href="/admin-guru.html"
               class="list-group-item list-group-item-action"
             >
-              Forum
+              Guru
             </a>
             <a
-              href="/dashboard-artikel.html"
+              href="/admin-mapel.html"
+              class="list-group-item list-group-item-action"
+            >
+              Mata Pelajaran
+            </a>
+            <a
+              href="/admin-artikel.html"
               class="list-group-item list-group-item-action"
             >
               Artikel
             </a>
             <a
-              href="/dashboard-soal.html"
+              href="/admin-soal-tryout.html"
               class="list-group-item list-group-item-action"
             >
-              Soal-soal Try Out
+              Soal-soal Tryout
             </a>
             <a
-              href="/dashboard-profil.html"
+              href="/admin-profil.html"
               class="list-group-item list-group-item-action"
             >
               Edit Profil
@@ -102,20 +108,17 @@
                       data-toggle="dropdown"
                     >
                       <img
-                        src="/images/user_pc.png"
+                        src="/images/ava-1.png"
                         alt="Ava Picture"
                         class="rounded-circle mr-2 profile-picture"
                       />
-                      Hi, Kandar
+                      Hi, Admin
                     </a>
                     <div class="dropdown-menu">
-                      <a href="/dashboard.html" class="dropdown-item"
+                      <a href="/admin.html" class="dropdown-item"
                         >Dashboard</a
                       >
-                      <a href="/dashboard-list-kelas.html" class="dropdown-item"
-                        >List Kelas</a
-                      >
-                      <a href="/dashboard-profil.html" class="dropdown-item"
+                      <a href="/admin-profil.html" class="dropdown-item"
                         >Settings</a
                       >
                       <div class="dropdown-divider"></div>
@@ -130,7 +133,7 @@
                 </ul>
                 <ul class="navbar-nav d-block d-lg-none">
                   <li class="nav-item">
-                    <a href="#" class="nav-link"> Hi, Kandar </a>
+                    <a href="#" class="nav-link"> Hi, Guru </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link d-inline-block">
@@ -181,113 +184,75 @@
                 </div>
 
                 <div class="row mt-3">
-                  <div class="col-12 mt-2">
-                    <h5 class="mb-3">Progress Kelas</h5>
-                    <a
-                      href="/dashboard-kelas-details.html"
-                      class="card card-list d-block"
-                    >
+                  <div class="col-lg-12 mt-2">
+                    <h5 class="mb-3">Data Siswa Register</h5>
+                    <div class="card">
                       <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-4">
-                            Matematika Wajib: Geometri Bidang Ruang
-                          </div>
-                          <div class="col-md-3 mt-3">
-                            <div class="progress">
-                              <div
-                                class="progress-bar bg-nofull"
-                                role="progressbar"
-                                style="width: 75%"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              >
-                                75%
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            8 dari 12 materi telah diselesaikan
-                          </div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img
-                              src="/images/dashboard-arrow-right.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
+                       <div class="row">
+                         <div class="col-lg-12">
+                            <table
+                          class="table table-borderless table-hover"
+                        >
+                          <thead>
+                            <tr>
+                              <th scope="col">nama</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Alamat</th>
+                              <th scope="col">Nomor HP</th>
+                              <th scope="col">#</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Daniel</td>
+                              <td>daniel123@gmail.com</td>
+                              <td>Kab. Bandung Barat</td>
+                              <td>087821638923</td>
+                              <td>
+                                <a href=""><img src="/images/non-aktif-ico.svg" style="width: 24px" alt=""></a>
+                                <a href=""><img src="/images/edit-ico.svg" style="width: 24px" alt=""></a>
+                                <a href=""><img src="/images/delete-ico.svg" style="width: 24px" alt=""></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Daniel</td>
+                              <td>daniel123@gmail.com</td>
+                              <td>Kab. Bandung Barat</td>
+                              <td>087821638923</td>
+                              <td>
+                                <a href=""><img src="/images/non-aktif-ico.svg" style="width: 24px" alt=""></a>
+                                <a href=""><img src="/images/edit-ico.svg" style="width: 24px" alt=""></a>
+                                <a href=""><img src="/images/delete-ico.svg" style="width: 24px" alt=""></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Daniel</td>
+                              <td>daniel123@gmail.com</td>
+                              <td>Kab. Bandung Barat</td>
+                              <td>087821638923</td>
+                              <td>
+                                <a href=""><img src="/images/aktif-ico.svg" style="width: 24px" alt=""></a>
+                                <a href=""><img src="/images/edit-ico.svg" style="width: 24px" alt=""></a>
+                                <a href=""><img src="/images/delete-ico.svg" style="width: 24px" alt=""></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Daniel</td>
+                              <td>daniel123@gmail.com</td>
+                              <td>Kab. Bandung Barat</td>
+                              <td>087821638923</td>
+                              <td>
+                                <a href=""><img src="/images/non-aktif-ico.svg" style="width: 24px" alt=""></a>
+                                <a href=""><img src="/images/edit-ico.svg" style="width: 24px" alt=""></a>
+                                <a href=""><img src="/images/delete-ico.svg" style="width: 24px" alt=""></a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                         </div>
+                       </div>
                       </div>
-                    </a>
-                    <a
-                      href="/dashboard-kelas-details.html"
-                      class="card card-list d-block"
-                    >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-4">
-                            Bahasa Inggris: Reading Text
-                          </div>
-                          <div class="col-md-3 mt-3">
-                            <div class="progress">
-                              <div
-                                class="progress-bar bg-nofull"
-                                role="progressbar"
-                                style="width: 15%"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              >
-                                15%
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            2 dari 10 materi telah diselesaikan
-                          </div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img
-                              src="/images/dashboard-arrow-right.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      href="/dashboard-kelas-details.html"
-                      class="card card-list d-block"
-                    >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-4">
-                            Sosiologi: Penyimpangan Sosial
-                          </div>
-                          <div class="col-md-3 mt-3">
-                            <div class="progress">
-                              <div
-                                class="progress-bar bg-success"
-                                role="progressbar"
-                                style="width: 100%"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              >
-                                100%
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            22 materi telah diselesaikan
-                          </div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img
-                              src="/images/dashboard-arrow-right.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>

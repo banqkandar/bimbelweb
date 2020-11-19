@@ -25,37 +25,43 @@
           </div>
           <div class="list-group list-group-flush">
             <a
-              href="/dashboard.html"
+              href="/admin.html"
               class="list-group-item list-group-item-action"
             >
               Dashboard
             </a>
             <a
-              href="/dashboard-kelas.html"
+              href="/admin-siswa.html"
               class="list-group-item list-group-item-action"
             >
-              Kelas
+              Siswa
             </a>
             <a
-              href="/dashboard-forum.html"
+              href="/admin-guru.html"
+              class="list-group-item list-group-item-action"
+            >
+              Guru
+            </a>
+            <a
+              href="/admin-mapel.html"
               class="list-group-item list-group-item-action active"
             >
-              Forum
+              Mata Pelajaran
             </a>
             <a
-              href="/dashboard-artikel.html"
+              href="/admin-artikel.html"
               class="list-group-item list-group-item-action"
             >
               Artikel
             </a>
             <a
-              href="/dashboard-soal.html"
+              href="/admin-soal-tryout.html"
               class="list-group-item list-group-item-action"
             >
-              Soal-soal Try Out
+              Soal-soal Tryout
             </a>
             <a
-              href="/dashboard-profil.html"
+              href="/admin-profil.html"
               class="list-group-item list-group-item-action"
             >
               Edit Profil
@@ -102,20 +108,17 @@
                       data-toggle="dropdown"
                     >
                       <img
-                        src="/images/user_pc.png"
+                        src="/images/ava-1.png"
                         alt="Ava Picture"
                         class="rounded-circle mr-2 profile-picture"
                       />
-                      Hi, Kandar
+                      Hi, Admin
                     </a>
                     <div class="dropdown-menu">
-                      <a href="/dashboard.html" class="dropdown-item"
+                      <a href="/admin.html" class="dropdown-item"
                         >Dashboard</a
                       >
-                      <a href="/dashboard-list-kelas.html" class="dropdown-item"
-                        >List Kelas</a
-                      >
-                      <a href="/dashboard-profil.html" class="dropdown-item"
+                      <a href="/admin-profil.html" class="dropdown-item"
                         >Settings</a
                       >
                       <div class="dropdown-divider"></div>
@@ -130,7 +133,7 @@
                 </ul>
                 <ul class="navbar-nav d-block d-lg-none">
                   <li class="nav-item">
-                    <a href="#" class="nav-link"> Hi, Kandar </a>
+                    <a href="#" class="nav-link"> Hi, Guru </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link d-inline-block">
@@ -149,78 +152,85 @@
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Forum</h2>
-                <p class="dashboard-subtitle">
-                  3 forum tersedia untuk dikerjakan
-                </p>
+                <h2 class="dashboard-title">Mata Pelajaran</h2>
+                <p class="dashboard-subtitle">12 Mata Pelajaran</p>
               </div>
               <div class="dashboard-content">
                 <div class="row mt-4">
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <a
-                          href="/dashboard-forum-details.html"
-                          class="card card-dashboard-kelas d-block"
+                  <div class="col-md-12">
+                    <div>
+                      <a href="/admin-tambah-mapel.html" class="btn btn-lanjut"
+                        >Tambah Mapel</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-lg-12 mt-2">
+                    <div class="card">
+                      <div class="card-body">
+                       <div class="row">
+                         <div class="col-lg-12">
+                            <table
+                          class="table table-borderless table-hover"
                         >
-                          <div class="card-body">
-                            <img
-                              src="/images/thumbnail-forum-1.png"
-                              alt=""
-                              class="w-100 mb-2"
-                            />
-                            <div class="kelas-title">
-                              Apakah yang disebut dengan islam menurutmu?
-                            </div>
-                            <div class="kelas-subtitle">
-                              Pak Ali - Agama
-                            </div>
-                            <div class="kelas-deadline">20 Nov - 13 Des</div>
-                          </div>
-                        </a>
-                      </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <a
-                          href="/dashboard-forum-details.html"
-                          class="card card-dashboard-kelas d-block"
-                        >
-                          <div class="card-body">
-                            <img
-                              src="/images/thumbnail-forum-2.png"
-                              alt=""
-                              class="w-100 mb-2"
-                            />
-                            <div class="kelas-title">
-                             Jelaskan kecerdasan manusia yang dikemukak...
-                            </div>
-                            <div class="kelas-subtitle">
-                              Pak Andi - Sosiologi
-                            </div>
-                            <div class="kelas-deadline">20 Nov - 13 Des</div>
-                          </div>
-                        </a>
-                      </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <a
-                          href="/dashboard-forum-details.html"
-                          class="card card-dashboard-kelas d-block"
-                        >
-                          <div class="card-body">
-                            <img
-                              src="/images/thumbnail-forum-3.png"
-                              alt=""
-                              class="w-100 mb-2"
-                            />
-                            <div class="kelas-title">
-                              Perbedaan otak kiri dengan otak kanan menurutmu ?
-                            </div>
-                            <div class="kelas-subtitle">
-                              Bu Reni - Biologi
-                            </div>
-                            <div class="kelas-deadline">20 Nov - 13 Des</div>
-                          </div>
-                        </a>
+                          <thead>
+                            <tr>
+                              <th scope="col">Kode Mapel</th>
+                              <th scope="col">Jurusan</th>
+                              <th scope="col">Mapel</th>
+                              <th scope="col">Tahun</th>
+                              <th scope="col">#</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>MD0128</td>
+                              <td>Multimedia</td>
+                              <td>Desain Grafis Percetakan</td>
+                              <td>2020</td>
+                              <td>
+                                <a href=""><img src="/images/edit-ico.svg" style="width: 24px" alt=""></a>
+                                <a href=""><img src="/images/delete-ico.svg" style="width: 24px" alt=""></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>MD0128</td>
+                              <td>Multimedia</td>
+                              <td>Desain Grafis Percetakan</td>
+                              <td>2020</td>
+                              <td>
+                                <a href=""><img src="/images/edit-ico.svg" style="width: 24px" alt=""></a>
+                                <a href=""><img src="/images/delete-ico.svg" style="width: 24px" alt=""></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>MD0128</td>
+                              <td>Multimedia</td>
+                              <td>Desain Grafis Percetakan</td>
+                              <td>2020</td>
+                              <td>
+                                <a href=""><img src="/images/edit-ico.svg" style="width: 24px" alt=""></a>
+                                <a href=""><img src="/images/delete-ico.svg" style="width: 24px" alt=""></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>MD0128</td>
+                              <td>Multimedia</td>
+                              <td>Desain Grafis Percetakan</td>
+                              <td>2020</td>
+                              <td>
+                                <a href=""><img src="/images/edit-ico.svg" style="width: 24px" alt=""></a>
+                                <a href=""><img src="/images/delete-ico.svg" style="width: 24px" alt=""></a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                         </div>
+                       </div>
                       </div>
                     </div>
-              </div>
+                  </div>
                 </div>
               </div>
             </div>

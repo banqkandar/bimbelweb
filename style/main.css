@@ -11294,9 +11294,9 @@ footer p {
 
 .page-dashboard .section-content .desc-artikel {
   font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
-  color: #A0A4A8;
+  font-size: 14px;
+  line-height: 28px;
+  color: #C4C4C4;
 }
 
 .page-dashboard .section-content .artikel-subtitle {
@@ -11542,6 +11542,11 @@ footer p {
   font-size: 12px;
   line-height: 18px;
   color: #383e56;
+}
+
+.card-dashboard-kelas .card-body .btn-ambil {
+  background-color: #6A1D25;
+  color: #FFF;
 }
 
 .input-search {

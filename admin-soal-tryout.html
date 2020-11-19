@@ -25,37 +25,43 @@
           </div>
           <div class="list-group list-group-flush">
             <a
-              href="/dashboard.html"
+              href="/admin.html"
               class="list-group-item list-group-item-action"
             >
               Dashboard
             </a>
             <a
-              href="/dashboard-kelas.html"
+              href="/admin-siswa.html"
               class="list-group-item list-group-item-action"
             >
-              Kelas
+              Siswa
             </a>
             <a
-              href="/dashboard-forum.html"
+              href="/admin-guru.html"
               class="list-group-item list-group-item-action"
             >
-              Forum
+              Guru
             </a>
             <a
-              href="/dashboard-artikel.html"
+              href="/admin-mapel.html"
+              class="list-group-item list-group-item-action"
+            >
+              Mata Pelajaran
+            </a>
+            <a
+              href="/admin-artikel.html"
               class="list-group-item list-group-item-action"
             >
               Artikel
             </a>
             <a
-              href="/dashboard-soal.html"
+              href="/admin-soal-tryout.html"
               class="list-group-item list-group-item-action active"
             >
-              Soal-soal Try Out
+              Soal-soal Tryout
             </a>
             <a
-              href="/dashboard-profil.html"
+              href="/admin-profil.html"
               class="list-group-item list-group-item-action"
             >
               Edit Profil
@@ -102,20 +108,17 @@
                       data-toggle="dropdown"
                     >
                       <img
-                        src="/images/user_pc.png"
+                        src="/images/ava-1.png"
                         alt="Ava Picture"
                         class="rounded-circle mr-2 profile-picture"
                       />
-                      Hi, Kandar
+                      Hi, Admin
                     </a>
                     <div class="dropdown-menu">
-                      <a href="/dashboard.html" class="dropdown-item"
+                      <a href="/admin.html" class="dropdown-item"
                         >Dashboard</a
-                      > 
-                      <a href="/dashboard-list-kelas.html" class="dropdown-item"
-                        >List Kelas</a
                       >
-                      <a href="/dashboard-profil.html" class="dropdown-item"
+                      <a href="/admin-profil.html" class="dropdown-item"
                         >Settings</a
                       >
                       <div class="dropdown-divider"></div>
@@ -130,7 +133,7 @@
                 </ul>
                 <ul class="navbar-nav d-block d-lg-none">
                   <li class="nav-item">
-                    <a href="#" class="nav-link"> Hi, Kandar </a>
+                    <a href="#" class="nav-link"> Hi, Guru </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link d-inline-block">
@@ -155,9 +158,18 @@
                 </p>
               </div>
               <div class="dashboard-content">
-                <div class="row">
+                <div class="row mt-4">
+                  <div class="col-md-12">
+                    <div>
+                      <a href="/admin-tambah-soal-tryout.html" class="btn btn-lanjut"
+                        >Tambah Soal Tryout</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
                   <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                    <div class="input-group mb-3">
+                    <div class="input-group">
                       <div class="input-group-prepend">
                         <button
                           class="btn input-search"
@@ -177,16 +189,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="row mt-3">
+                <div class="row mt-4">
                   <div class="col-12 mt-2">
                     <div class="card card-list d-block">
                       <div class="card-body">
                         <div class="row">
                           <div class="col-md-5">
                             Soal dan Pembahasan TPS UTBK - Pengetahuan Kuantitatif
-                          </div>
-                          <div class="col-md-1 mt-3">
-                            2016
+                            <b>
+                              2016
+                            </b>
                           </div>
                           <div class="col-md-2 mt-3">
                             Umum
@@ -198,6 +210,14 @@
                             <a href="">
                               <img
                                 src="/images/ico-download.svg"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                          <div class="col-md-1  mt-3">
+                            <a href="">
+                              <img
+                                src="/images/delete-grey-ico.svg"
                                 alt=""
                               />
                             </a>
@@ -210,9 +230,9 @@
                         <div class="row">
                           <div class="col-md-5">
                             Soal dan Pembahasan TPS UTBK - Pengetahuan Kuantitatif
-                          </div>
-                          <div class="col-md-1 mt-3">
-                            2016
+                            <b>
+                              2016
+                            </b>
                           </div>
                           <div class="col-md-2 mt-3">
                             Umum
@@ -224,6 +244,14 @@
                             <a href="">
                               <img
                                 src="/images/ico-download.svg"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                          <div class="col-md-1  mt-3">
+                            <a href="">
+                              <img
+                                src="/images/delete-grey-ico.svg"
                                 alt=""
                               />
                             </a>
@@ -236,9 +264,9 @@
                         <div class="row">
                           <div class="col-md-5">
                             Soal dan Pembahasan TPS UTBK - Pengetahuan Kuantitatif
-                          </div>
-                          <div class="col-md-1 mt-3">
-                            2016
+                            <b>
+                              2016
+                            </b>
                           </div>
                           <div class="col-md-2 mt-3">
                             Umum
@@ -254,10 +282,17 @@
                               />
                             </a>
                           </div>
+                          <div class="col-md-1  mt-3">
+                            <a href="">
+                              <img
+                                src="/images/delete-grey-ico.svg"
+                                alt=""
+                              />
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
